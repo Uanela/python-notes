@@ -53,4 +53,33 @@ f"Using {tool} version {major}.{minor + 9}" # The king
 - `name.encode("utf-8")` | `name.decode('utf-8')`
 - `hex(name)` -> wil make name into hex
 
-### Lists
+### Lists aka Array
+
+- `L = [1, '2', true, 1.9]`
+- `len(L)` -> get the array length
+- `L + [4, 5, 6]` -> magically a dumbly becomes `[1, '2', true, 1.9, 4, 5, 6]`, basically concatanates the arrays
+- `L * 2` -> if prev concatenated this ones doubles the items inside from `[ 4, 5, 6 ]` to `[ 4, 5, 6, 4, 5, 6 ]`
+- `L[:1]` -> the first 2, like 0 1, that cool string things
+- `L.append()` -> adds and item to the end
+- `L.pop(2)` -> Deletes the item with index 2
+- `del L[2]` -> also works as prev
+- `L.sort()`
+- `L.reverse()`
+
+#### Matrixes
+
+- Just use `NumPy` for the sake of humanity
+- `col2 = [row[1] for row in M]` -> Collect the items in column 2
+- `[row[1] + 1 for row in M]` -> Add 1 to each in column 2
+- `[row[1] for row in M if row[1] % 2 == 0]` -> Filters to get only num dividable by 2, odd items
+- `[M[i][i] for i in [0, 1, 2]]` -> Collect a diagonal from matrix
+- `[c * 2 for c in 'hack']` -> Repeat charaters in a string
+- `list(range(4))` -> Integers 0..N-1, creates a list of 4 items
+- `list(range(-6, 7, 2))` -> -6 to +6 by 2
+- `[[ x ** 2, x ** 3 ] for x in range(4)]` -> Understand by yourself
+- `[[x, x // 2, x * 2] for x in range(-6, 7, 2) if x > 0]`
+- `//` -> Does floor division
+- `sum(something)` -> means what you read
+- `G = (sum(row) for row in M)` -> Make a generator of row sums (not executed yet), `next(G)` Run the iteration protocol (ahead) and if you keep calling `next(G)` it will keep going and summing up each row.
+- `{ sum(row) for row in M }` -> Makes an unordred set of rows sums
+- ` {i: sum(M[i]) for i in range(3) }` -> Makes key:value table of row sums
