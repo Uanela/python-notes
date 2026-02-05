@@ -83,3 +83,33 @@ f"Using {tool} version {major}.{minor + 9}" # The king
 - `G = (sum(row) for row in M)` -> Make a generator of row sums (not executed yet), `next(G)` Run the iteration protocol (ahead) and if you keep calling `next(G)` it will keep going and summing up each row.
 - `{ sum(row) for row in M }` -> Makes an unordred set of rows sums
 - ` {i: sum(M[i]) for i in range(3) }` -> Makes key:value table of row sums
+
+### Dictionaries
+
+- `dog = { 'name': 'Max', 'job': 'The guard dog', 'age': 7 }`
+- `print(dog['name'])` -> accesses the prop name
+- `dog['job'] = 'New job'` -> changes the prop value
+- `cat = dict(name="Grifield", kind="Lion", age=300)` -> Creates a dict also
+- `dict(zip(['name', 'last'], ['Uanela', 'Como']))` -> Zipping
+- `zip([], [])` -> Makes key value pairs, array 1 are keys and the second are value
+- `'e' in dog` -> boolean
+- `if not 'e' in dog:` -> cool inverse check of prev
+- `dog.get('job', 'default dog job')` -> same as `dog['a']` with a default if missing
+- `dog['height'] if 'e' in dog else 0` -> if/else ternary expression form
+- `dog.keys()` -> returns iterable of dog keys
+- `list(dog.keys())` -> returns iterable of dog key
+- `dog.values()` -> returns iterable of dog values
+- `list(dog.items())` -> tuple of key/value pairs
+- `iter(dog.keys())` -> Get an iterator from an iterable
+- **Item Iteration**:
+
+```python
+for key in dog.keys():
+    print(key, dog[key])
+
+for key in dog:
+    print(key, dog[key])
+
+for (key, value) in dog.items(): # key/value-pair tuples iteration
+    print(key, value)
+```
