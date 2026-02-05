@@ -113,3 +113,15 @@ for key in dog:
 for (key, value) in dog.items(): # key/value-pair tuples iteration
     print(key, value)
 ```
+
+### Tuples
+
+- This are basically `Lists` with less methods, the diff is that they immutable
+- `T = (1, 2, 4, 4)`
+- `T + (5, 6)` -> concatenates
+- `T[2]` -> indexing
+- `T[1:]` -> slicing
+- `T.index(4)` -> get index of 4
+- `T.count(4)` -> how many 4 we've
+- You can just create a new tuple
+- `T = 'hack', 3.0, [11, 22, 33]` -> yes it creates a tuple
