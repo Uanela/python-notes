@@ -125,3 +125,9 @@ for (key, value) in dog.items(): # key/value-pair tuples iteration
 - `T.count(4)` -> how many 4 we've
 - You can just create a new tuple
 - `T = 'hack', 3.0, [11, 22, 33]` -> yes it creates a tuple
+
+### Files
+
+- `file = open("file.txt", "w")` -> open a new file in text-output mode, then `file.write("content")` finally `file.close()`
+- `file = open("data.tx")` -> withou "w" opens exsting file in text-input mode, then `text = file.read()`
+- `for line in open("data.txt"):` -> displays lines in a file
