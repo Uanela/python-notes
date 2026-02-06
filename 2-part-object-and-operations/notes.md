@@ -294,3 +294,10 @@ for (line := file.read())
 - `from decimal import Decimal`, `Decimal('1.5')`
 - `decimal.getcontext().prec = 4` -> setup a fixed precision of 4
 - `Fraction`
+
+### Sets in Action
+
+- `S = { 1.23 }`
+- `S.add([ 1, 2, 3 ])`
+- `S.remove([ 1, 2, 3 ])`
+- `S.update([ 1, 2, 3 ])`
