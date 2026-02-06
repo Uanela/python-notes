@@ -55,9 +55,9 @@ f"Using {tool} version {major}.{minor + 9}" # The king
 
 ### Lists aka Array
 
-- `L = [1, '2', true, 1.9]`
+- `L = [1, '2', True, 1.9]`
 - `len(L)` -> get the array length
-- `L + [4, 5, 6]` -> magically a dumbly becomes `[1, '2', true, 1.9, 4, 5, 6]`, basically concatanates the arrays
+- `L + [4, 5, 6]` -> magically a dumbly becomes `[1, '2', True, 1.9, 4, 5, 6]`, basically concatanates the arrays
 - `L * 2` -> if prev concatenated this ones doubles the items inside from `[ 4, 5, 6 ]` to `[ 4, 5, 6, 4, 5, 6 ]`
 - `L[:1]` -> the first 2, like 0 1, that cool string things
 - `L.append()` -> adds and item to the end
@@ -140,3 +140,14 @@ for (key, value) in dog.items(): # key/value-pair tuples iteration
 - `open('data.bin', 'rb').read()` -> read binary data to bytes
 - `tf = open('unidata.txt', 'w', enconding='utf-8')`, `tf.write(`h\u00c4k`)` -> enconds to utf-8, `tf.close()`
 - `open('unidata.txt', 'r', enconding='utf-8').read()` -> Decodes from UTF-8
+
+### Sets
+
+- neither mappings nor sequences, rather are unordered colletions of immutable ("hashable")
+- It also is like JS the sets remove duplication
+- `x = set('hack')` -> sequence => set
+- `y = { 'a', 'b', 'b' }` -> set literal
+- `x & y, x | y` -> intersection, union
+- `x - y, x > y` -> difference, superset
+- `set('code') - set('hack')` -> collestion difference
+- `set('code') == set('deoc')` -> order-neutral equality
