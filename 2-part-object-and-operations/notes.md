@@ -166,3 +166,20 @@ for (key, value) in dog.items(): # key/value-pair tuples iteration
 ### Type Hinting (Kind TS but no)
 
 - `x: int = 1` -> this is just optinal hint, `x = "another thing"` but it doesn't have to be `int`
+
+### User-Defined Objects (classes)
+
+- starting just
+
+```python
+class Worker:
+
+cacilda = Worker("Cacilda Uanela", 70000)
+sheuzia = Worker("Sheuzia Daleula", 90000)
+
+cacilda.lastName()
+sheuzia.giveRaise(.10)
+cacilda.pay
+```
+
+- There object and there are object-oriented (where we need classes)
