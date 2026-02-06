@@ -256,3 +256,11 @@ for (line := file.read())
 - `round(2.2)`
 - `math.floor(2.2)`
 - `math.trunc(-2.2)`
+
+### Complex Number
+
+- They are represented as two floating-point numbers - the real and imaginary parts - and you code them by adding j or J to the imaginary part.
+
+```python
+1j * 1j = -1+0j
+```
