@@ -301,3 +301,16 @@ for (line := file.read())
 - `S.add([ 1, 2, 3 ])`
 - `S.remove([ 1, 2, 3 ])`
 - `S.update([ 1, 2, 3 ])`
+
+# 6.Chapter - The Dynamic Typing Interlude
+
+- `L2 = L1[:]` -> Make a copy of L1 into L2, there is L1.copy() also
+- `import copy`, `copy.deepcopy(Y)` -> deep copy an object
+- `a: int = 2`
+- `a: list[int] = [ 2, 3, 4 ]`
+- Type hints in functions
+
+```python
+def func(a: int, b: list[str]) -> float:
+    return 'anything' + 2 + b
+```
