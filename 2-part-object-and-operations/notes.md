@@ -264,3 +264,12 @@ for (line := file.read())
 ```python
 1j * 1j = -1+0j
 ```
+
+### Hex, Octal and Binary
+
+- `oct()`
+- `hex()`
+- `bin()`
+- `float()`
+- `eval()` -> can convert string to number, becaues it treats the code as python code.
+- `^` -> the bitwise XOR
