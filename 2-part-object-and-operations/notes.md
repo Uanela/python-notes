@@ -35,9 +35,14 @@
 - `name.split(',')` -> split at comma and returns array
 - `name.upper()`
 - `name.lower()`
+- `name.isdigit()`
 - `name.isalpha()` -> Content tests: isdigit also
 - `name.rstrip()` -> strip whitespaces in the right side, probably there is `lstrip`
 - This one belows is how we call use string template literals (Not sure if name is same as in JS)
+- `"""this is multiline string"""`
+- `b'h\xc4ck''` -> byte strings
+- `r"C:\new\test.bin"` -> raw strings
+- `f"string {kind}"`
 
 ```python
 tool = "Arkos"
@@ -314,3 +319,14 @@ for (line := file.read())
 def func(a: int, b: list[str]) -> float:
     return 'anything' + 2 + b
 ```
+
+## Strings
+
+- `s[1:10:2]` -> the last 2 means skipping items
+
+### Character-code conversions
+
+- `ord('h')` -> to its int code
+- `chr(104)` -> to its character
+
+### String Methods
