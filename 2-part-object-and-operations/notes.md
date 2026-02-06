@@ -288,3 +288,9 @@ for (line := file.read())
 - `random.random()`
 - `random.choice()`
 - `random.shuffle()`
+
+### Other Number Objects
+
+- `from decimal import Decimal`, `Decimal('1.5')`
+- `decimal.getcontext().prec = 4` -> setup a fixed precision of 4
+- `Fraction`
