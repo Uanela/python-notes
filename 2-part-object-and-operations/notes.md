@@ -157,3 +157,8 @@ for (key, value) in dog.items(): # key/value-pair tuples iteration
 - `True` and `False`
 - `None` -> this is null, just more weird things
 - `bool('hack')` -> conversion
+
+### Types
+
+- `type([])` -> get type of expression
+- `isinstance(L, list)` -> oo way
