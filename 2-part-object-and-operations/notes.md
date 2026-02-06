@@ -131,3 +131,12 @@ for (key, value) in dog.items(): # key/value-pair tuples iteration
 - `file = open("file.txt", "w")` -> open a new file in text-output mode, then `file.write("content")` finally `file.close()`
 - `file = open("data.tx")` -> withou "w" opens exsting file in text-input mode, then `text = file.read()`
 - `for line in open("data.txt"):` -> displays lines in a file
+
+#### Unicode and byte files
+
+- `bf = open("data.bin", "wb")` -> opens in write mode binary in a bytes files
+- `bf.write(b'\xFFa\xEEc\xDDk\n')` -> write binary data in a bytes
+- `bf.close()`
+- `open('data.bin', 'rb').read()` -> read binary data to bytes
+- `tf = open('unidata.txt', 'w', enconding='utf-8')`, `tf.write(`h\u00c4k`)` -> enconds to utf-8, `tf.close()`
+- `open('unidata.txt', 'r', enconding='utf-8').read()` -> Decodes from UTF-8
