@@ -1,6 +1,6 @@
-# Object and Operations
+# 2. Part - Object and Operations
 
-## 4.Chap - Introducing Python Objects
+## 4.Chapter - Introducing Python Objects
 
 ### Python Core Objects
 
@@ -183,3 +183,62 @@ cacilda.pay
 ```
 
 - There object and there are object-oriented (where we need classes)
+
+## 5. Chapter - Numbers and Expressions
+
+### Numeric Literals
+
+- integeres, floating-point, octal, hex, binary literals
+- `Decimal('1.5')`, Fraction(19, 2)
+
+### Built-in Numeric Tools
+
+#### Expression operators
+
+- `+, -, *, /, >>, **, &, %` and many more
+
+#### Built-in mathematical functions
+
+- `pow, abs, round, int, hex, bin` and more
+- `abs` -> return absolute value
+- `bin` -> makes an binary conversion
+
+#### Utility modules
+
+- `random, math, statistics` and more
+
+### Python Expression Operators
+
+- `yield x`, `yield from x` -> generator function send protocol, in iterable for example.
+- `x := y` -> walrus operator, allows assign to x and return x as expression at the same time
+
+```python
+for (line := file.read())
+     print(line)
+```
+
+- `square = lambda x: x ** 2` -> lambda expressions (kind of arrow inline function in JS) in JS it `square = x => x ** 2`
+- `x if y else z` -> ternary selection (only x if y else z)
+- `x and y`
+- `x or y`
+- `not x`
+- `x in y`, `not in y` -> if x is in y
+- `x is y`, `is not y` -> read it again
+- `x < y`, `x <= y`, `x > y`, `x >= y`
+- `x == y`, `x != y`
+- `x | y`
+- `x ^ y`
+- `x & y`
+- `x << y`, `x >> y` -> bitwise left shift (binaries bro)
+- `x + y`, `x - y`
+- `x * y`, `x % y`
+- `x / y`, `x // y`, `x @ y` -> divsion, floor division, matrix multiplication (unsed)
+- `-x`, `+x` (does nothing), `~x` -> negation, identity, bitwise not (inversion) (~x is x = -(x + 1))
+- `x ** y` -> power
+- `await fun`
+- `x[i]`
+- `x[i:j:k]` -> slicing
+- `x(...)` -> call
+- `x.attr` -> get
+- `(...)` -> tuple, expression, generator expression
+- `{...}` -> dict, set, dict and set comprehensions
