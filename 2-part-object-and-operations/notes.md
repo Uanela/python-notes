@@ -151,3 +151,9 @@ for (key, value) in dog.items(): # key/value-pair tuples iteration
 - `x - y, x > y` -> difference, superset
 - `set('code') - set('hack')` -> collestion difference
 - `set('code') == set('deoc')` -> order-neutral equality
+
+### Booleans and None
+
+- `True` and `False`
+- `None` -> this is null, just more weird things
+- `bool('hack')` -> conversion
