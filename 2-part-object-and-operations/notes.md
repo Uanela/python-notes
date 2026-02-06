@@ -273,3 +273,18 @@ for (line := file.read())
 - `float()`
 - `eval()` -> can convert string to number, becaues it treats the code as python code.
 - `^` -> the bitwise XOR
+
+### Other Built-in Math Tools
+
+- `math.pi`
+- `math.e`
+- `math.sin()`
+- `math.sqrt()`
+- `min()`
+- `max()`
+- `1_000_000`
+- `import statistics`, `statistics.mean([1, 2, 4, 5, 7])` -> returns the avarage
+- `statistics.median([1, 2, 4, 5, 7])` -> the middle
+- `random.random()`
+- `random.choice()`
+- `random.shuffle()`
