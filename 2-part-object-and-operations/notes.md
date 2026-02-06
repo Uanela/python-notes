@@ -162,3 +162,7 @@ for (key, value) in dog.items(): # key/value-pair tuples iteration
 
 - `type([])` -> get type of expression
 - `isinstance(L, list)` -> oo way
+
+### Type Hinting (Kind TS but no)
+
+- `x: int = 1` -> this is just optinal hint, `x = "another thing"` but it doesn't have to be `int`
