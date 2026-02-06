@@ -242,3 +242,17 @@ for (line := file.read())
 - `x.attr` -> get
 - `(...)` -> tuple, expression, generator expression
 - `{...}` -> dict, set, dict and set comprehensions
+
+### Numbers in Action
+
+- REPL - Read-Execute-Print Loop, it is not python spec I just search about it bc was tired of not knowing it.
+- Seems like `1.1 + 2.2` jokes about JS is in all languages when you operate with floating numbers
+- We've `repr` kind of print but no
+
+### Comparison operators
+
+- `math.isclose(1.1 + 2.2, 3.3)` -> within default-but-passable tolerances
+- `int(2.2)`
+- `round(2.2)`
+- `math.floor(2.2)`
+- `math.trunc(-2.2)`
