@@ -36,6 +36,10 @@
 - `name.upper()`
 - `name.lower()`
 - `name.isdigit()`
+- `name.removeprefix()`
+- `name.removesuffix()`
+- `name.swapcase()`
+- `name.isupper()`
 - `name.isalpha()` -> Content tests: isdigit also
 - `name.rstrip()` -> strip whitespaces in the right side, probably there is `lstrip`
 - This one belows is how we call use string template literals (Not sure if name is same as in JS)
@@ -70,6 +74,7 @@ f"Using {tool} version {major}.{minor + 9}" # The king
 - `del L[2]` -> also works as prev
 - `L.sort()`
 - `L.reverse()`
+- `L.join()`
 
 #### Matrixes
 
@@ -330,3 +335,20 @@ def func(a: int, b: list[str]) -> float:
 - `chr(104)` -> to its character
 
 ### String Methods
+
+- Most are just noted before
+
+#### Formatting Expression Custom Formats
+
+This is kind of a C thing, so you can dive deep if you want, we can do things like:
+
+```python
+'%e | %f | %g' % (x, x, x)
+```
+
+All of them will be printed differently because of the letters modifiers like:
+
+- `f` - floating point decimal
+- `o` - octal integer (base 8)
+- `x` - x integer (base 16)
+- `d` - decimal (base 10)
