@@ -69,12 +69,20 @@ f"Using {tool} version {major}.{minor + 9}" # The king
 - `L + [4, 5, 6]` -> magically a dumbly becomes `[1, '2', True, 1.9, 4, 5, 6]`, basically concatanates the arrays
 - `L * 2` -> if prev concatenated this ones doubles the items inside from `[ 4, 5, 6 ]` to `[ 4, 5, 6, 4, 5, 6 ]`
 - `L[:1]` -> the first 2, like 0 1, that cool string things
-- `L.append()` -> adds and item to the end
+- `L.append()` -> adds a single item to the end
 - `L.pop(2)` -> Deletes the item with index 2
 - `del L[2]` -> also works as prev
-- `L.sort()`
+- `L.sort()` -> can take named args just like `L.sort(key=str.lower)` normalizing to lowercase for comparison sorting. `reverse=True`
 - `L.reverse()`
 - `L.join()`
+- `L.copy()`
+- `L.clear()`
+- `L.extend([])` -> appends as many in the end
+- `L.remove(x)` -> remove x value
+- `L.count(x)` -> occurencies of x
+- `del L[i]`
+- `L = [1, 2, 3]`, `L[1:2] = [4, 5]`, `[1, 4, 5, 3]` -> this is crazy
+- `*L` -> finally unpacking just like the boss JS
 
 #### Matrixes
 
@@ -352,3 +360,9 @@ All of them will be printed differently because of the letters modifiers like:
 - `o` - octal integer (base 8)
 - `x` - x integer (base 16)
 - `d` - decimal (base 10)
+
+## 8. Chapter - Lists and Dictionaries
+
+### Lists
+
+We've covered this before probably I will mostly skim around here, just added the new notes also on the section above so go there and find it bro.
