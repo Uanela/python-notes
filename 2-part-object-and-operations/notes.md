@@ -108,17 +108,18 @@ f"Using {tool} version {major}.{minor + 9}" # The king
 - `print(dog['name'])` -> accesses the prop name
 - `dog['job'] = 'New job'` -> changes the prop value
 - `cat = dict(name="Grifield", kind="Lion", age=300)` -> Creates a dict also
-- `dict(zip(['name', 'last'], ['Uanela', 'Como']))` -> Zipping
+- `dict(zip(['name', 'last'], ['Uanela', 'Como']))` -> Zipping, zip works like `zip(keyslist, valueslist)`
 - `zip([], [])` -> Makes key value pairs, array 1 are keys and the second are value
 - `'e' in dog` -> boolean
 - `if not 'e' in dog:` -> cool inverse check of prev
 - `dog.get('job', 'default dog job')` -> same as `dog['a']` with a default if missing
 - `dog['height'] if 'e' in dog else 0` -> if/else ternary expression form
-- `dog.keys()` -> returns iterable of dog keys
+- `dog.keys()` -> returns iterable of dog keys this exactlly `dict_keys([])` if you need a list do `list(dog.keys())`
 - `list(dog.keys())` -> returns iterable of dog key
-- `dog.values()` -> returns iterable of dog values
-- `list(dog.items())` -> tuple of key/value pairs
+- `dog.values()` -> returns iterable of dog values, same as keys behavior that needs list in order to get a real list
+- `list(dog.items())` -> tuple of key/value pairs, same applies as keys needs list wrapper to bet a proper list of items
 - `iter(dog.keys())` -> Get an iterator from an iterable
+- `D = dict(['name', 'Bod'], ('age', 40))` -> looks like `zip` but not, each tuple represents a pair of key/value
 - **Item Iteration**:
 
 ```python
@@ -131,6 +132,20 @@ for key in dog:
 for (key, value) in dog.items(): # key/value-pair tuples iteration
     print(key, value)
 ```
+
+- `D.setdefault(key, default?)` -> dynamically sets the key
+- `D.pop(key, default?)` -> if no key, and no default then error
+- `D.update(D2)` -> merge by keys, works kind like deepmerge (not sure of high depth)
+- `D.clear()` -> remove all items
+- `len(D)` -> lenght of items
+- `D1 == D2` -> equality only
+- `**D` -> unpacking bro
+- `dict(key=value)` -> basically can take named arguments
+- `dict.fromkeys(keyslist, value)`
+- `dict(a=1, b=2) | D` -> the values of D will win
+- `D = { k: v for (k, v) in zip(['a', 'b', 'c'], [1, 2, 3]) }` -> been loving this inline sytanx (still weird though)
+- `|`-> union operator for dicts, basically will unite all of dicts and right most wins
+- `&`-> intersection operator for dics, will only get you what both have in common
 
 ### Tuples
 
@@ -366,3 +381,21 @@ All of them will be printed differently because of the letters modifiers like:
 ### Lists
 
 We've covered this before probably I will mostly skim around here, just added the new notes also on the section above so go there and find it bro.
+
+### Dictionaries
+
+The famous hashmap (hope I ain't getting it wrong) or even object without Class in JS. probably you will find most the things on the sections above I've read about this before
+
+- Catch key missing erros
+
+```python
+try:
+    print(Matrix[(2, 3, 6)]) # Yes we can use tuples as dict keys
+except KeyError:
+    print(0)
+```
+
+### Gotaches
+
+- learned shortly that we can have `;` to separte statements
+- `sorted(any_iterable)` which means `dict_keys('name', 'age')` can go without `list` wrapper
