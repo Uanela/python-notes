@@ -26,18 +26,54 @@
 # a, *b= 'hack'
 # print(a, b)
 
-person = { "name": "Uanela" }
-# dog = ("", name="Max")
+# person = { "name": "Uanela" }
+# # dog = ("", name="Max")
 
-class Person:
-    def __init__(self, name, age):
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+# sheu = Person("Sheu", 25)
+
+# # person["name"] := 'this' + 'hello'
+
+# print(person["name"])
+
+# choices = { 'macOS': 2001, 'Linux': 1991, 'Windows': 1985 }
+# choice = 'amiga'
+
+# try:
+#     choices[choice]
+#     print("You got it")
+# except:
+#     print(f'{choice} is not a valid choice, please choose one of {list(choices.keys())}')
+
+# state = input("Enter an state: ")
+
+# match state:
+#     case 'go' | 'proceed' | 'siga':
+#         print("you can go champ")
+#     case 'stop' | 'wait':
+#         print("Stop bro...")
+#     case other:
+#         print("Hmmm wait a sec yet not stop not go, but just stop", other)
+
+class Emp:
+    def __init__(self, name): 
         self.name = name
-        self.age = age
 
-sheu = Person("Sheu", 25)
+pat = Emp('Pat')
 
-# person["name"] := 'this' + 'hello'
+# You mentioned state could be 'Pat' (a string) or pat (the object)
+# Let's test it with the object:
+state = pat 
 
-print(person["name"])
-
-
+match state:
+    # This checks if state is EQUAL to the string 'Pat'
+    case pat.name as what: 
+        print('attr', what)
+    
+    # This checks if state is an INSTANCE of Emp
+    case Emp(name=what): 
+        print('instance', what)

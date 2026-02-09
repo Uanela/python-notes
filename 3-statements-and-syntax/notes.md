@@ -73,3 +73,46 @@ sys.stdout = tem
 ```
 
 - can also do `print(1, 3, 4, file=a_file)`, `a_file.close()`
+
+## 12. Chapter - if and match selections
+
+Most of the things just took note above
+
+- this cool match statement
+- we can do it with `lists`, 'tuples' and `objects` also
+- `10 if x else 5` -> ternary `if/else`
+
+```python
+state = input("Enter an state: ")
+
+match state:
+    case 'go' | 'proceed' | 'siga':
+        print("you can go champ")
+    case 'stop' | 'wait':
+        print("Stop bro...")
+    case other:
+        print("Hmmm wait a sec yet not stop not go, but just stop", other)
+```
+
+- This weired usage of `as` and `what`:
+
+```python
+class Emp:
+    def __init__(self, name):
+        self.name = name
+
+pat = Emp('Pat')
+
+# You mentioned state could be 'Pat' (a string) or pat (the object)
+# Let's test it with the object:
+state = pat
+
+match state:
+    # This checks if state is EQUAL to the string 'Pat'
+    case pat.name as what:
+        print('attr', what)
+
+    # This checks if state is an INSTANCE of Emp
+    case Emp(name=what):
+        print('instance', what)
+```
