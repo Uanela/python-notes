@@ -178,6 +178,36 @@ print(pat.name)
 - `file = open("file.txt", "w")` -> open a new file in text-output mode, then `file.write("content")` finally `file.close()`
 - `file = open("data.tx")` -> withou "w" opens exsting file in text-input mode, then `text = file.read()`
 - `for line in open("data.txt"):` -> displays lines in a file
+- `file.read()` -> read it to a string
+- `open(path, 'w').write(content)` -> write the file
+- `open(path, 'w').close()`
+- `file.read(N)` -> read up until N line
+- `output.flush()` -> flush output buffer to disk without closing
+- `anyFile.seek(N)` -> change file position to offset N for next operation, iterator for example
+- `file.readlines()` -> read entire file into a list of line strings
+- get cwd
+
+```python
+import os
+
+print(os.getcwd())
+print(os.listdir()) # list cwd()
+print(os.listdir('some/path/to/dir'))
+```
+
+- `file.readline()` -> read one line and keeps goind each time u call it
+- Trying pickle
+
+```python
+import pickle # used to serialize and deserialize python objects
+D = { 'a': 1, 'b': 2 }
+F = open('datafile.pkl', 'wb')
+pickle.dump(D, F)
+F.close()
+
+F = open('datafile.pkl', 'rb')
+E = pickle.load(F)
+```
 
 #### Unicode and byte files
 
@@ -409,7 +439,15 @@ except KeyError:
     print(0)
 ```
 
-### Gotaches
+### Gotchas
 
 - learned shortly that we can have `;` to separte statements
 - `sorted(any_iterable)` which means `dict_keys('name', 'age')` can go without `list` wrapper
+
+### Tuples
+
+I just put all up there
+
+### Files
+
+I am doing the same putting all up there
