@@ -25,3 +25,20 @@ match var:
 - `assert X > Y, 'X too small'` -> debugging checks
 - `with open('data') as file: process(file)` -> context managers
 - `type vector = list[float]` -> Type hinting alias
+
+## 11. Chapter - Assigments, Expressions and Prints
+
+### Assigments
+
+Once again I will just pass what I do not know and what is kind still new
+
+- `code, hack = 'py', 'PY'` -> tuple assignment
+- `[code, hack] = ['py', 'PY']` -> list assigment
+- `a, b, c, d = 'hack'`
+- `a, *b= 'hack'` -> b will be a list of strings
+- `*a, b= 'hack'` -> a will be a list of strings, liked this inversion
+- `a, *c, b = 'hack'` -> works like this also, this is chief kiss
+- `code = hack = 'python'` -> multiple-target assigment
+- `(a, b), c = string[:2], string[2:]` -> also works with nested sequences
+- `*args` -> collects position args and returns a tuple
+- `**kwargs` -> For named args and returns dictionary
