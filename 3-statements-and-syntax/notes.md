@@ -42,3 +42,9 @@ Once again I will just pass what I do not know and what is kind still new
 - `(a, b), c = string[:2], string[2:]` -> also works with nested sequences
 - `*args` -> collects position args and returns a tuple
 - `**kwargs` -> For named args and returns dictionary
+
+### Expression Statements
+
+Just pointing out new things
+
+- `print(a, b, c, sep="**", end="...\n")` -> see those cool separator (sep) and end named arguments bro
