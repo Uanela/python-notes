@@ -48,3 +48,28 @@ Once again I will just pass what I do not know and what is kind still new
 Just pointing out new things
 
 - `print(a, b, c, sep="**", end="...\n")` -> see those cool separator (sep) and end named arguments bro
+
+### Print Operations
+
+- By default `print` sends stream to stdout, now see printing the hard way:
+
+```python
+import sys
+
+sys.stdout.write('hello world\n')
+```
+
+- By pass the standard output and pass a file
+
+```python
+import sys
+
+org_stdout = sys.stdout
+sys.stdout = open('file/path/here', 'a') # Open in append mode
+print(x, y, z) # Now this will print to the file above
+
+sys.stdout.close() # flush output to disk
+sys.stdout = tem
+```
+
+- can also do `print(1, 3, 4, file=a_file)`, `a_file.close()`
