@@ -451,3 +451,9 @@ I just put all up there
 ### Files
 
 I am doing the same putting all up there
+
+### Core Types Review and Summary
+
+- `==` -> python will perfom a comparison on all nested objects recursively
+- `is` -> tests whether the two are really same object (i.e, live at the same address in memoery)
+- `{}`, `[]` -> they are falsy
