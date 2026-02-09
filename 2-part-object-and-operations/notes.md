@@ -83,6 +83,7 @@ f"Using {tool} version {major}.{minor + 9}" # The king
 - `del L[i]`
 - `L = [1, 2, 3]`, `L[1:2] = [4, 5]`, `[1, 4, 5, 3]` -> this is crazy
 - `*L` -> finally unpacking just like the boss JS
+- `sorted(L, reverse=True)`
 
 #### Matrixes
 
@@ -151,6 +152,9 @@ for (key, value) in dog.items(): # key/value-pair tuples iteration
 
 - This are basically `Lists` with less methods, the diff is that they immutable
 - `T = (1, 2, 4, 4)`
+- `T = 1, 2, 4, 4` -> yes without parantheses works
+- `T = tuple("hack")`
+- `a, b, c = 1, 2, 3`
 - `T + (5, 6)` -> concatenates
 - `T[2]` -> indexing
 - `T[1:]` -> slicing
@@ -158,6 +162,16 @@ for (key, value) in dog.items(): # key/value-pair tuples iteration
 - `T.count(4)` -> how many 4 we've
 - You can just create a new tuple
 - `T = 'hack', 3.0, [11, 22, 33]` -> yes it creates a tuple
+- namedtuples
+
+```python
+from collections import namedtuple
+
+Rec = namedtuple("Rec", ['name', 'age', 'jobs'])
+pat = Rec('Pat', age=40.5, jobs["dev", "mgr"])
+
+print(pat.name)
+```
 
 ### Files
 
