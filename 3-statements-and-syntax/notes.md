@@ -151,3 +151,10 @@ else: # optional
 - `S = { x + 10 for x in L if x > 0 }` -> set Comprehension
 - `D = {x: x + 10 for x in L if x > 0 }` -> dictionary Comprehension
 - `G = (x + 10 for x in L if > 0)` -> Generator expression
+
+### Iteration Tools
+
+- `"&&".join('anoter')` -> is not iteration
+- `sum(range(5))`
+- `min(range(5))`
+- `max(range(5))`
