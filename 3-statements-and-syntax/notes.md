@@ -142,3 +142,12 @@ else: # optional
 - `iter(L)`
 - `next(F, Default?)` -> files are iterator by themselves
 - `map((1, 2), 'py')` -> returns an iterable not list
+
+### Comprehensions
+
+- `L = [x + 10 for x in L]` -> is faster as tested 3.12
+- `[line.rstrip() for line in open('data.txt') if line[0] in 'LP']` -> with if clauses
+- `L = [x + 10 for x in L if x > 0]` -> list Comprehension
+- `S = { x + 10 for x in L if x > 0 }` -> set Comprehension
+- `D = {x: x + 10 for x in L if x > 0 }` -> dictionary Comprehension
+- `G = (x + 10 for x in L if > 0)` -> Generator expression
