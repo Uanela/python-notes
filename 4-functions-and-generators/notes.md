@@ -85,3 +85,23 @@ def makeActions():
         acts.append(lambda x, i = i: x ** i) # This will preserver state
     return acts
 ```
+
+## 18. Chapter - Arguments
+
+### Argument-passing basics
+
+- This is like another langs, if u do not know any lang, then go read about it yourself.
+- Best practice: avoid mutating args, try to always make a copy
+
+### Simulating Output Parameters and Multiple Results
+
+```python
+def multi(x, y):
+    x = 2
+    y = [3, 4]
+    return x, y
+
+a, b = multi(2, [4, 5])
+```
+
+### Special Argument-Matching Modes
