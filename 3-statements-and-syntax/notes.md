@@ -116,3 +116,17 @@ match state:
     case Emp(name=what):
         print('instance', what)
 ```
+
+## 13. Chapter - While and For Loops
+
+### while loops
+
+- `while/else`
+
+```python
+while test:
+    # code
+    pass
+else: # optional
+    pass # Only runs once if `test` fails
+```
