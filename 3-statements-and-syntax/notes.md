@@ -158,3 +158,11 @@ else: # optional
 - `sum(range(5))`
 - `min(range(5))`
 - `max(range(5))`
+
+## 15. Chapter - The Documentation Interlude
+
+- `dir(module)`
+- Inline docs, and you can get it through `obj.__doc__`
+- `help(obj)` -> this gives help about the content passed
+- `python3 -m pydoc -b` -> You got pydoc which opens the browser
+- `!python3 -m pydoc "import pydoc, print(pydoc.\_\_file\_\_)" -> will open vi

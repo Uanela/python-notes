@@ -59,21 +59,33 @@
 #     case other:
 #         print("Hmmm wait a sec yet not stop not go, but just stop", other)
 
-class Emp:
-    def __init__(self, name): 
-        self.name = name
+# class Emp:
+#     def __init__(self, name): 
+#         self.name = name
 
-pat = Emp('Pat')
+# pat = Emp('Pat')
 
-# You mentioned state could be 'Pat' (a string) or pat (the object)
-# Let's test it with the object:
-state = pat 
+# # You mentioned state could be 'Pat' (a string) or pat (the object)
+# # Let's test it with the object:
+# state = pat 
 
-match state:
-    # This checks if state is EQUAL to the string 'Pat'
-    case pat.name as what: 
-        print('attr', what)
+# match state:
+#     # This checks if state is EQUAL to the string 'Pat'
+#     case pat.name as what: 
+#         print('attr', what)
     
-    # This checks if state is an INSTANCE of Emp
-    case Emp(name=what): 
-        print('instance', what)
+#     # This checks if state is an INSTANCE of Emp
+#     case Emp(name=what): 
+#         print('instance', what)
+
+
+def function():
+    r"""
+    This is my badass function
+    """
+    pass
+
+print(function.__doc__)
+help(function)
+
+
