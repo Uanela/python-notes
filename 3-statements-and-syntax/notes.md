@@ -130,3 +130,15 @@ while test:
 else: # optional
     pass # Only runs once if `test` fails
 ```
+
+## 14. Chapter - Iterations and Comprehensions
+
+### Iterations
+
+- `zip`, `enumerate` -> all gives enumeratable
+- `file.readline()` -> one line at time
+- `file.readlines()` -> all lines at once
+- `file.__next__()`
+- `iter(L)`
+- `next(F, Default?)` -> files are iterator by themselves
+- `map((1, 2), 'py')` -> returns an iterable not list
